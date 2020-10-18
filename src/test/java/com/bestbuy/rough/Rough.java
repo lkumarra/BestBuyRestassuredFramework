@@ -1,24 +1,11 @@
 package com.bestbuy.rough;
 
-import java.io.IOException;
-
-import org.json.JSONObject;
-
 import com.bestbuy.categoriespojo.CategoriesResponse;
 import com.bestbuy.constants.BestBuyConstants;
-import com.bestbuy.paylods.CategoriesPayload;
-import com.bestbuy.paylods.ProductPayload;
-import com.bestbuy.paylods.ServicesPayload;
-import com.bestbuy.paylods.StoresPayload;
-import com.bestbuy.productpojo.Categories;
 import com.bestbuy.productpojo.ProductResponse;
 import com.bestbuy.storespojo.StoresResponse;
 import com.bestbuy.utilities.JsonMapper;
 import com.bestbuy.utilities.Utilities;
-import com.besybuy.servicespojo.ServicesResponse;
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.restassured.response.Response;
 
@@ -50,7 +37,7 @@ public class Rough {
 		System.out.println(sresponse.getLimit());
 		
 		Response servicesResponse = util.getRequestResponse(BestBuyConstants.ServiceApiEndPoint.getResource());
-		ServicesResponse sresponse1 = mapper.getMappedResponse(servicesResponse, ServicesResponse.class);
+		com.bestbuy.servicespojo.ServicesResponse sresponse1 = mapper.getMappedResponse(servicesResponse, com.bestbuy.servicespojo.ServicesResponse.class);
 		System.out.println(sresponse1.getLimit());
 		
 		Response categoriesResponse = util.getRequestResponse(BestBuyConstants.CategoriesApiEndPoint.getResource());

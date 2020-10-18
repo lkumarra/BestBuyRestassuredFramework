@@ -1,4 +1,4 @@
-package com.besybuy.servicespojo;
+package com.bestbuy.servicespojo;
 
 public class ServicesResponse {
 
