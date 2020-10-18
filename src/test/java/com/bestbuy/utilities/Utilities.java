@@ -18,18 +18,37 @@ import static io.restassured.RestAssured.given;
 public class Utilities {
 	
 	static RequestSpecification req = null;
+	static PrintStream requestlog = null;
+	static PrintStream responselog = null;
 	
 	/**
-	 * Build a outputstrem to print logs in file
+	 * Insert the request logs to the RequestLogs.txt file
 	 */
-	private PrintStream printLogs() {
-		PrintStream log = null;
+	private PrintStream printRequestLogs() {
+		if(requestlog == null) {
 		try {
-		 log = new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\ReqResLogs\\ReqResLogs.txt"));
+			requestlog = new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\ReqResLogs\\RequestLogs.txt"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		return log;
+		return requestlog;
+		}
+		return requestlog;
+	}
+	
+	/**
+	 * Insert the response logs to ResponseLogs.txt file.
+	 */
+	private PrintStream printResponseLogs() {
+		if (responselog == null) {
+		try {
+			responselog = new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\ReqResLogs\\ResponseLogs.txt"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		return responselog;
+		}
+		return responselog;
 	}
 	
 	/**
@@ -38,8 +57,8 @@ public class Utilities {
 	 */
 	public RequestSpecification requestSpecification() {
 		if(req == null) {
-			req = new RequestSpecBuilder().setBaseUri(BestBuyConstants.BaseUri.getResource()).addFilter(RequestLoggingFilter.logRequestTo(this.printLogs()))
-					.addFilter(ResponseLoggingFilter.logResponseTo(this.printLogs())).setContentType(ContentType.JSON).build();
+			req = new RequestSpecBuilder().setBaseUri(BestBuyConstants.BaseUri.getResource()).addFilter(RequestLoggingFilter.logRequestTo(this.printRequestLogs()))
+					.addFilter(ResponseLoggingFilter.logResponseTo(this.printResponseLogs())).setContentType(ContentType.JSON).build();
 		}
 		return req;
 	}
@@ -50,8 +69,8 @@ public class Utilities {
 	 */
 	public RequestSpecification requestSpecification(String queryName, String queryValue) {
 		if(req == null) {
-			req = new RequestSpecBuilder().setBaseUri(BestBuyConstants.BaseUri.getResource()).addQueryParam(queryName, queryValue).addFilter(RequestLoggingFilter.logRequestTo(this.printLogs()))
-					.addFilter(ResponseLoggingFilter.logResponseTo(this.printLogs())).setContentType(ContentType.JSON).build();
+			req = new RequestSpecBuilder().setBaseUri(BestBuyConstants.BaseUri.getResource()).addQueryParam(queryName, queryValue).addFilter(RequestLoggingFilter.logRequestTo(this.printRequestLogs()))
+					.addFilter(ResponseLoggingFilter.logResponseTo(this.printResponseLogs())).setContentType(ContentType.JSON).build();
 		}
 		return req;
 	}

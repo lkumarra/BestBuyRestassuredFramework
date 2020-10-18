@@ -15,9 +15,10 @@ public class StoresPayload {
 	int lng;
 	String hours;
 	String services;
+	String serviceType;
 
 	public StoresPayload(String name, String type, String address, String address2, String city, String state,String zip, int lat,
-			int lng, String hours, String services) {
+			int lng, String hours, String services, String serviceType) {
 		this.name = name;
 		this.type = type;
 		this.address = address;
@@ -29,8 +30,13 @@ public class StoresPayload {
 		this.lng = lng;
 		this.hours = hours;
 		this.services = services;
+		this.serviceType = serviceType;
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public String getStoresJsonPayload() {
 		JSONObject obj = new JSONObject();
 		obj.put("name", this.name);
@@ -43,7 +49,9 @@ public class StoresPayload {
 		obj.put("lat", this.lat);
 		obj.put("lng", this.lng);
 		obj.put("hours", this.hours);
-		obj.put("services", this.services);
+		JSONObject obj2 = new JSONObject();
+		obj2.put(this.services, this.serviceType);
+		obj.put("services",obj2);
 		return obj.toString();
 	}
 
