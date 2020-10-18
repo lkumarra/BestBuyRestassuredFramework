@@ -3,6 +3,7 @@ package com.bestbuy.rough;
 import com.bestbuy.categoriespojo.CategoriesResponse;
 import com.bestbuy.constants.BestBuyConstants;
 import com.bestbuy.productpojo.ProductResponse;
+import com.bestbuy.servicespojo.ServicesResponse;
 import com.bestbuy.storespojo.StoresResponse;
 import com.bestbuy.utilities.JsonMapper;
 import com.bestbuy.utilities.Utilities;
@@ -37,12 +38,11 @@ public class Rough {
 		System.out.println(sresponse.getLimit());
 		
 		Response servicesResponse = util.getRequestResponse(BestBuyConstants.ServiceApiEndPoint.getResource());
-		com.bestbuy.servicespojo.ServicesResponse sresponse1 = mapper.getMappedResponse(servicesResponse, com.bestbuy.servicespojo.ServicesResponse.class);
+		com.bestbuy.servicespojo.ServicesResponse sresponse1 = mapper.getMappedResponse(servicesResponse, ServicesResponse.class);
 		System.out.println(sresponse1.getLimit());
 		
 		Response categoriesResponse = util.getRequestResponse(BestBuyConstants.CategoriesApiEndPoint.getResource());
 		CategoriesResponse cresponse = mapper.getMappedResponse(categoriesResponse, CategoriesResponse.class);
 		System.out.println(cresponse.getLimit());
 	}
-;
 }
