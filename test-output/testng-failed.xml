@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bestbuy.storesapitest.StoresAPIPostTest">
+      <class name="com.bestby.productapitest.ProductAPIGetTest">
         <methods>
-          <include name="verifyStoresApiStoresAddTest" invocation-numbers="0 1"/>
+          <include name="verifyProductApiResponse" invocation-numbers="5"/>
+          <include name="getProductApiResponse"/>
         </methods>
-      </class> <!-- com.bestbuy.storesapitest.StoresAPIPostTest -->
+      </class> <!-- com.bestby.productapitest.ProductAPIGetTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

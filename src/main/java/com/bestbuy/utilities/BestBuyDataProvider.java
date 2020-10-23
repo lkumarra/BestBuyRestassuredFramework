@@ -27,4 +27,9 @@ public class BestBuyDataProvider {
 	public static Object[][] getServicesPayloadData(){
 		return excelReader.getExcelData(Constants.SERVICE_POST_SHEET);
 	}
+	
+	@DataProvider(name = "ProductGetData")
+	public static Object[][] getProductApiData(){
+		return excelReader.getExcelData(Constants.PRODUCT_GET_DATA_SHEET);
+	}
 }

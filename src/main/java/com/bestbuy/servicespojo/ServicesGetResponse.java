@@ -1,6 +1,6 @@
 package com.bestbuy.servicespojo;
 
-public class ServicesResponse {
+public class ServicesGetResponse {
 
 	int total;
 	int limit;
