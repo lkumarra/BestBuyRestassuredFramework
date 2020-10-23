@@ -1,5 +1,5 @@
-Request method:	GET
-Request URI:	http://localhost:3030/products
+Request method:	POST
+Request URI:	http://localhost:3030/stores
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -9,4 +9,46 @@ Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "zip": "201206.0",
+    "hours": "9 to 5",
+    "address": "Sec 45 Noida",
+    "lng": 105,
+    "address2": "Sec 62 Noida",
+    "city": "Noida",
+    "name": "Xiomi Store",
+    "state": "Uttar Pradesh",
+    "services": {
+        "Smartphone": "Sale"
+    },
+    "type": "Smartphone",
+    "lat": 102
+}
+Request method:	POST
+Request URI:	http://localhost:3030/stores
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "zip": "201246.0",
+    "hours": "9 to 5",
+    "address": "Sec 63 Noida",
+    "lng": 101,
+    "address2": "Sec 112 Noida",
+    "city": "Noida",
+    "name": "Apple Strore",
+    "state": "Uttar Pradesh",
+    "services": {
+        "Smartphone": "Sale"
+    },
+    "type": "Smartphone",
+    "lat": 100
+}

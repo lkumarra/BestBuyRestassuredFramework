@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2301" started-at="2020-10-23T15:19:51 IST" finished-at="2020-10-23T15:19:53 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2301" started-at="2020-10-23T15:19:51 IST" finished-at="2020-10-23T15:19:53 IST">
+      <class name="com.bestbuy.storesapitest.StoresAPIPostTest">
+        <test-method status="PASS" signature="verifyStoresApiStoresAddTest(java.util.Hashtable)[pri:0, instance:com.bestbuy.storesapitest.StoresAPIPostTest@4d95d2a2]" name="verifyStoresApiStoresAddTest" duration-ms="1970" started-at="2020-10-23T15:19:51 IST" data-provider="StoresPayloadData" finished-at="2020-10-23T15:19:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{state=Uttar Pradesh, address2=Sec 62 Noida, name=Xiomi Store, zip=201206.0, serviceType=Sale, city=Noida, lat=102.0, type=Smartphone, lng=105.0, hours=9 to 5, services=Smartphone, address=Sec 45 Noida}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStoresApiStoresAddTest -->
+        <test-method status="PASS" signature="verifyStoresApiStoresAddTest(java.util.Hashtable)[pri:0, instance:com.bestbuy.storesapitest.StoresAPIPostTest@4d95d2a2]" name="verifyStoresApiStoresAddTest" duration-ms="45" started-at="2020-10-23T15:19:53 IST" data-provider="StoresPayloadData" finished-at="2020-10-23T15:19:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{state=Uttar Pradesh, address2=Sec 112 Noida, name=Apple Strore, zip=201246.0, serviceType=Sale, city=Noida, lat=100.0, type=Smartphone, lng=101.0, hours=9 to 5, services=Smartphone, address=Sec 63 Noida}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStoresApiStoresAddTest -->
+      </class> <!-- com.bestbuy.storesapitest.StoresAPIPostTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
