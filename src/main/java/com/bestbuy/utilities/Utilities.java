@@ -4,8 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
-
 import com.bestbuy.constants.BestBuyConstants;
+import com.bestbuy.constants.Constants;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -27,7 +27,7 @@ public class Utilities {
 	private PrintStream printRequestLogs() {
 		if(requestlog == null) {
 		try {
-			requestlog = new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\ReqResLogs\\RequestLogs.txt"));
+			requestlog = new PrintStream(new FileOutputStream(Constants.REQ_LOG_PATH));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -42,7 +42,7 @@ public class Utilities {
 	private PrintStream printResponseLogs() {
 		if (responselog == null) {
 		try {
-			responselog = new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\ReqResLogs\\ResponseLogs.txt"));
+			responselog = new PrintStream(new FileOutputStream(Constants.RES_LOG_PATH));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

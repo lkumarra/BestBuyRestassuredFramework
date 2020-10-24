@@ -3,6 +3,7 @@ package com.bestby.productapitest;
 import static org.testng.Assert.assertEquals;
 
 import java.util.Hashtable;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,8 +20,8 @@ public class ProductAPIGetTest {
 	String productApiEndPoint = BestBuyConstants.ProductApiEndPoint.getResource();
 	Utilities util = new Utilities();
 	JsonMapper mapper = new JsonMapper();
-	Response response;
-	ProductResponse productResponse;
+	static Response response;
+	static ProductResponse productResponse;
 	
 	@BeforeMethod
 	public void getProductApiResponse() {
@@ -36,5 +37,18 @@ public class ProductAPIGetTest {
 		assertEquals(productResponse.getData()[index].getManufacturer(), table.get("manufacturer"));
 		assertEquals(productResponse.getData()[index].getDescription(), table.get("description"));
 	}
+	
+	
+	@Test(dataProviderClass = BestBuyDataProvider.class, dataProvider = "ProductCategoriesData")
+	public void verifyCategoriesData(Hashtable<String, String> table) {
+		int dataIndex = (int) Float.parseFloat(table.get("dataindex"));
+		int categoriesIndex = (int) Float.parseFloat(table.get("categoriesindex"));
+		assertEquals(productResponse.getData()[dataIndex].getCategories()[categoriesIndex].getId(), table.get("id"));
+		assertEquals(productResponse.getData()[dataIndex].getCategories()[categoriesIndex].getName(), table.get("name"));
+		assertEquals(productResponse.getData()[dataIndex].getCategories()[categoriesIndex].getCreatedAt(), table.get("createdAt"));
+		assertEquals(productResponse.getData()[dataIndex].getCategories()[categoriesIndex].getUpdatedAt(), table.get("updatedAt"));
+	}
+	
+	
 
 }

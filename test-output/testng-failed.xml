@@ -5,8 +5,8 @@
     <classes>
       <class name="com.bestby.productapitest.ProductAPIGetTest">
         <methods>
-          <include name="verifyProductApiResponse" invocation-numbers="5"/>
           <include name="getProductApiResponse"/>
+          <include name="verifyCategoriesData" invocation-numbers="31 32"/>
         </methods>
       </class> <!-- com.bestby.productapitest.ProductAPIGetTest -->
     </classes>

@@ -1,17 +1,717 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="60" passed="60">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5533" started-at="2020-10-23T22:30:15 IST" finished-at="2020-10-23T22:30:20 IST">
+  <suite name="Suite" duration-ms="10371" started-at="2020-10-24T13:13:42 IST" finished-at="2020-10-24T13:13:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5533" started-at="2020-10-23T22:30:15 IST" finished-at="2020-10-23T22:30:20 IST">
+    <test name="Test1" duration-ms="10371" started-at="2020-10-24T13:13:42 IST" finished-at="2020-10-24T13:13:52 IST">
+      <class name="com.bestby.productapitest.ProductAPIPostTest">
+        <test-method status="PASS" signature="verifyProductApiProductAddTest(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIPostTest@69b2283a]" name="verifyProductApiProductAddTest" duration-ms="26" started-at="2020-10-24T13:13:52 IST" data-provider="ProductPayloadData" finished-at="2020-10-24T13:13:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{shipping=200.0, url=http://appple.com, name=Apple Macbook Pro, upc=None, image=https://apple.com, model=Macbook Pro, price=2000.0, type=Laptop, manufacturer=Apple, description=15 inch Laptop}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductApiProductAddTest -->
+        <test-method status="PASS" signature="verifyProductApiProductAddTest(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIPostTest@69b2283a]" name="verifyProductApiProductAddTest" duration-ms="22" started-at="2020-10-24T13:13:52 IST" data-provider="ProductPayloadData" finished-at="2020-10-24T13:13:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{shipping=200.0, url=http://acer.com, name=Acer Swift 3, upc=None, image=https://acer.com, model=Swift 2, price=1200.0, type=Laptop, manufacturer=Acer, description=Acer 15 inch Laptop}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductApiProductAddTest -->
+        <test-method status="PASS" signature="verifyProductApiProductAddTest(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIPostTest@69b2283a]" name="verifyProductApiProductAddTest" duration-ms="24" started-at="2020-10-24T13:13:52 IST" data-provider="ProductPayloadData" finished-at="2020-10-24T13:13:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{shipping=100.0, url=https://oneplus.com, name=Oneplus 8, upc=None, image=https://oneplus.com, model=Oneplus 8, price=800.0, type=Smartphone, manufacturer=Oneplus, description=Oneplus 8 smartphone}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductApiProductAddTest -->
+        <test-method status="PASS" signature="verifyProductApiProductAddTest(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIPostTest@69b2283a]" name="verifyProductApiProductAddTest" duration-ms="15" started-at="2020-10-24T13:13:52 IST" data-provider="ProductPayloadData" finished-at="2020-10-24T13:13:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{shipping=100.0, url=http://appple.com, name=Iphone 12, upc=None, image=http://appple.com, model=Iphone 12, price=1200.0, type=Smartphone, manufacturer=Apple, description=Iphone }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductApiProductAddTest -->
+      </class> <!-- com.bestby.productapitest.ProductAPIPostTest -->
+      <class name="com.bestbuy.serviceapitest.ServiceAPIPostTest">
+        <test-method status="PASS" signature="verifyServiceApiServiceAddTest(java.util.Hashtable)[pri:0, instance:com.bestbuy.serviceapitest.ServiceAPIPostTest@78b66d36]" name="verifyServiceApiServiceAddTest" duration-ms="1459" started-at="2020-10-24T13:13:42 IST" data-provider="ServicesPayloadData" finished-at="2020-10-24T13:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Repairing}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceApiServiceAddTest -->
+        <test-method status="PASS" signature="verifyServiceApiServiceAddTest(java.util.Hashtable)[pri:0, instance:com.bestbuy.serviceapitest.ServiceAPIPostTest@78b66d36]" name="verifyServiceApiServiceAddTest" duration-ms="27" started-at="2020-10-24T13:13:44 IST" data-provider="ServicesPayloadData" finished-at="2020-10-24T13:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Selling}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceApiServiceAddTest -->
+      </class> <!-- com.bestbuy.serviceapitest.ServiceAPIPostTest -->
       <class name="com.bestby.productapitest.ProductAPIGetTest">
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="3160" started-at="2020-10-23T22:30:15 IST" finished-at="2020-10-23T22:30:18 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="209" started-at="2020-10-24T13:13:44 IST" finished-at="2020-10-24T13:13:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="8" started-at="2020-10-23T22:30:18 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:18 IST">
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:44 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Alkaline Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=0.0, id=abcat0208002}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="181" started-at="2020-10-24T13:13:44 IST" finished-at="2020-10-24T13:13:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="2" started-at="2020-10-24T13:13:44 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Housewares, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=0.0, id=pcmcat248700050021}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="184" started-at="2020-10-24T13:13:44 IST" finished-at="2020-10-24T13:13:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:44 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Household Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=0.0, id=pcmcat303600050001}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="166" started-at="2020-10-24T13:13:44 IST" finished-at="2020-10-24T13:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:45 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Connected Home & Housewares, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=0.0, id=pcmcat312300050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="159" started-at="2020-10-24T13:13:45 IST" finished-at="2020-10-24T13:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:45 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Alkaline Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=1.0, id=abcat0208002}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="169" started-at="2020-10-24T13:13:45 IST" finished-at="2020-10-24T13:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:45 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Housewares, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=1.0, id=pcmcat248700050021}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="167" started-at="2020-10-24T13:13:45 IST" finished-at="2020-10-24T13:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:45 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Household Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=1.0, id=pcmcat303600050001}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="163" started-at="2020-10-24T13:13:45 IST" finished-at="2020-10-24T13:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="0" started-at="2020-10-24T13:13:45 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Connected Home & Housewares, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=1.0, id=pcmcat312300050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="165" started-at="2020-10-24T13:13:45 IST" finished-at="2020-10-24T13:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:45 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Alkaline Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=2.0, id=abcat0208002}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="168" started-at="2020-10-24T13:13:45 IST" finished-at="2020-10-24T13:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:46 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Housewares, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=2.0, id=pcmcat248700050021}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="166" started-at="2020-10-24T13:13:46 IST" finished-at="2020-10-24T13:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="2" started-at="2020-10-24T13:13:46 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Household Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=2.0, id=pcmcat303600050001}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="172" started-at="2020-10-24T13:13:46 IST" finished-at="2020-10-24T13:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:46 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Connected Home & Housewares, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=2.0, id=pcmcat312300050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="160" started-at="2020-10-24T13:13:46 IST" finished-at="2020-10-24T13:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:46 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Alkaline Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=3.0, id=abcat0208002}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="161" started-at="2020-10-24T13:13:46 IST" finished-at="2020-10-24T13:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:46 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Housewares, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=3.0, id=pcmcat248700050021}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="162" started-at="2020-10-24T13:13:46 IST" finished-at="2020-10-24T13:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:46 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Household Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=3.0, id=pcmcat303600050001}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:46 IST" finished-at="2020-10-24T13:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="2" started-at="2020-10-24T13:13:47 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Connected Home & Housewares, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=3.0, id=pcmcat312300050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="162" started-at="2020-10-24T13:13:47 IST" finished-at="2020-10-24T13:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:47 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Alkaline Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=4.0, id=abcat0208002}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:47 IST" finished-at="2020-10-24T13:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:47 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Housewares, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=4.0, id=pcmcat248700050021}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="161" started-at="2020-10-24T13:13:47 IST" finished-at="2020-10-24T13:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:47 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Household Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=4.0, id=pcmcat303600050001}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="171" started-at="2020-10-24T13:13:47 IST" finished-at="2020-10-24T13:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:47 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Connected Home & Housewares, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=4.0, id=pcmcat312300050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="161" started-at="2020-10-24T13:13:47 IST" finished-at="2020-10-24T13:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="159" started-at="2020-10-24T13:13:47 IST" finished-at="2020-10-24T13:13:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="0" started-at="2020-10-24T13:13:47 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Car Electronics & GPS, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=5.0, id=abcat0300000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:48 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Car Audio, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=5.0, id=abcat0302000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="157" started-at="2020-10-24T13:13:48 IST" finished-at="2020-10-24T13:13:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:48 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Car Speakers, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=5.0, id=abcat0302005}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="156" started-at="2020-10-24T13:13:48 IST" finished-at="2020-10-24T13:13:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="0" started-at="2020-10-24T13:13:48 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=4" Car Speakers, updatedAt=2016-11-17T17:57:04.643Z, createdAt=2016-11-17T17:57:04.643Z, dataindex=5.0, id=pcmcat360500050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="160" started-at="2020-10-24T13:13:48 IST" finished-at="2020-10-24T13:13:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:48 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Alkaline Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=6.0, id=abcat0208002}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="156" started-at="2020-10-24T13:13:48 IST" finished-at="2020-10-24T13:13:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:48 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Housewares, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=6.0, id=pcmcat248700050021}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="159" started-at="2020-10-24T13:13:48 IST" finished-at="2020-10-24T13:13:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:48 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Household Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=6.0, id=pcmcat303600050001}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="167" started-at="2020-10-24T13:13:48 IST" finished-at="2020-10-24T13:13:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="0" started-at="2020-10-24T13:13:48 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Connected Home & Housewares, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=6.0, id=pcmcat312300050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:48 IST" finished-at="2020-10-24T13:13:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:49 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Specialty Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=7.0, id=abcat0208006}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:49 IST" finished-at="2020-10-24T13:13:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:49 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Housewares, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=7.0, id=pcmcat248700050021}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="162" started-at="2020-10-24T13:13:49 IST" finished-at="2020-10-24T13:13:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="0" started-at="2020-10-24T13:13:49 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Household Batteries, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=7.0, id=pcmcat303600050001}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="152" started-at="2020-10-24T13:13:49 IST" finished-at="2020-10-24T13:13:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:49 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Connected Home & Housewares, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=7.0, id=pcmcat312300050015}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:49 IST" finished-at="2020-10-24T13:13:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:49 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Car Electronics & GPS, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=8.0, id=abcat0300000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="157" started-at="2020-10-24T13:13:49 IST" finished-at="2020-10-24T13:13:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:49 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Car Installation Parts & Accessories, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=8.0, id=pcmcat165900050023}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="159" started-at="2020-10-24T13:13:49 IST" finished-at="2020-10-24T13:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:50 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Deck Installation Parts, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=8.0, id=pcmcat165900050031}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="155" started-at="2020-10-24T13:13:50 IST" finished-at="2020-10-24T13:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:50 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Dash Installation Kits, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=8.0, id=pcmcat165900050033}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="157" started-at="2020-10-24T13:13:50 IST" finished-at="2020-10-24T13:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:50 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=4.0, name=Car Audio Installation Parts, updatedAt=2016-11-17T17:57:04.643Z, createdAt=2016-11-17T17:57:04.643Z, dataindex=8.0, id=pcmcat331600050007}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="154" started-at="2020-10-24T13:13:50 IST" finished-at="2020-10-24T13:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:50 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=0.0, name=Car Electronics & GPS, updatedAt=2016-11-17T17:57:04.285Z, createdAt=2016-11-17T17:57:04.285Z, dataindex=9.0, id=abcat0300000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="180" started-at="2020-10-24T13:13:50 IST" finished-at="2020-10-24T13:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:50 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=1.0, name=Car Installation Parts & Accessories, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=9.0, id=pcmcat165900050023}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="160" started-at="2020-10-24T13:13:50 IST" finished-at="2020-10-24T13:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="1" started-at="2020-10-24T13:13:50 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=2.0, name=Deck Installation Parts, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=9.0, id=pcmcat165900050031}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="162" started-at="2020-10-24T13:13:50 IST" finished-at="2020-10-24T13:13:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="0" started-at="2020-10-24T13:13:51 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=3.0, name=Dash Installation Kits, updatedAt=2016-11-17T17:57:05.399Z, createdAt=2016-11-17T17:57:05.399Z, dataindex=9.0, id=pcmcat165900050033}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="152" started-at="2020-10-24T13:13:51 IST" finished-at="2020-10-24T13:13:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyCategoriesData(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyCategoriesData" duration-ms="0" started-at="2020-10-24T13:13:51 IST" data-provider="ProductCategoriesData" finished-at="2020-10-24T13:13:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoriesindex=4.0, name=Car Audio Installation Parts, updatedAt=2016-11-17T17:57:04.643Z, createdAt=2016-11-17T17:57:04.643Z, dataindex=9.0, id=pcmcat331600050007}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoriesData -->
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="162" started-at="2020-10-24T13:13:51 IST" finished-at="2020-10-24T13:13:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-24T13:13:51 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:51 IST">
           <params>
             <param index="0">
               <value>
@@ -22,15 +722,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="236" started-at="2020-10-23T22:30:18 IST" finished-at="2020-10-23T22:30:19 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="154" started-at="2020-10-24T13:13:51 IST" finished-at="2020-10-24T13:13:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="216" started-at="2020-10-23T22:30:19 IST" finished-at="2020-10-23T22:30:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-23T22:30:19 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:19 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-24T13:13:51 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:51 IST">
           <params>
             <param index="0">
               <value>
@@ -41,7 +737,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-23T22:30:19 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:19 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:51 IST" finished-at="2020-10-24T13:13:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductApiResponse -->
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-24T13:13:51 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:51 IST">
           <params>
             <param index="0">
               <value>
@@ -52,11 +752,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="232" started-at="2020-10-23T22:30:19 IST" finished-at="2020-10-23T22:30:19 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="154" started-at="2020-10-24T13:13:51 IST" finished-at="2020-10-24T13:13:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-23T22:30:19 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:19 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-24T13:13:51 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:51 IST">
           <params>
             <param index="0">
               <value>
@@ -67,11 +767,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="260" started-at="2020-10-23T22:30:19 IST" finished-at="2020-10-23T22:30:19 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="157" started-at="2020-10-24T13:13:51 IST" finished-at="2020-10-24T13:13:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-23T22:30:19 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:19 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-24T13:13:52 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:52 IST">
           <params>
             <param index="0">
               <value>
@@ -82,11 +782,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="170" started-at="2020-10-23T22:30:19 IST" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="155" started-at="2020-10-24T13:13:52 IST" finished-at="2020-10-24T13:13:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-23T22:30:20 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-24T13:13:52 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:52 IST">
           <params>
             <param index="0">
               <value>
@@ -97,11 +797,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="209" started-at="2020-10-23T22:30:20 IST" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:52 IST" finished-at="2020-10-24T13:13:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-23T22:30:20 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-24T13:13:52 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:52 IST">
           <params>
             <param index="0">
               <value>
@@ -112,11 +812,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="192" started-at="2020-10-23T22:30:20 IST" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="153" started-at="2020-10-24T13:13:52 IST" finished-at="2020-10-24T13:13:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-23T22:30:20 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-24T13:13:52 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:52 IST">
           <params>
             <param index="0">
               <value>
@@ -127,11 +827,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="214" started-at="2020-10-23T22:30:20 IST" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="158" started-at="2020-10-24T13:13:52 IST" finished-at="2020-10-24T13:13:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-23T22:30:20 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-24T13:13:52 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:52 IST">
           <params>
             <param index="0">
               <value>
@@ -142,11 +842,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
-        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="getProductApiResponse" is-config="true" duration-ms="199" started-at="2020-10-23T22:30:20 IST" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="getProductApiResponse()[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="getProductApiResponse" is-config="true" duration-ms="155" started-at="2020-10-24T13:13:52 IST" finished-at="2020-10-24T13:13:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProductApiResponse -->
-        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@2833cc44]" name="verifyProductApiResponse" duration-ms="1" started-at="2020-10-23T22:30:20 IST" data-provider="ProductGetData" finished-at="2020-10-23T22:30:20 IST">
+        <test-method status="PASS" signature="verifyProductApiResponse(java.util.Hashtable)[pri:0, instance:com.bestby.productapitest.ProductAPIGetTest@bef2d72]" name="verifyProductApiResponse" duration-ms="0" started-at="2020-10-24T13:13:52 IST" data-provider="ProductGetData" finished-at="2020-10-24T13:13:52 IST">
           <params>
             <param index="0">
               <value>
@@ -158,6 +858,30 @@
           </reporter-output>
         </test-method> <!-- verifyProductApiResponse -->
       </class> <!-- com.bestby.productapitest.ProductAPIGetTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.bestbuy.storesapitest.StoresAPIPostTest">
+        <test-method status="PASS" signature="verifyStoresApiStoresAddTest(java.util.Hashtable)[pri:0, instance:com.bestbuy.storesapitest.StoresAPIPostTest@5223e5ee]" name="verifyStoresApiStoresAddTest" duration-ms="27" started-at="2020-10-24T13:13:44 IST" data-provider="StoresPayloadData" finished-at="2020-10-24T13:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{state=Uttar Pradesh, address2=Sec 62 Noida, name=Xiomi Store, zip=201206.0, serviceType=Sale, city=Noida, lat=102.0, type=Smartphone, lng=105.0, hours=9 to 5, services=Smartphone, address=Sec 45 Noida}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStoresApiStoresAddTest -->
+        <test-method status="PASS" signature="verifyStoresApiStoresAddTest(java.util.Hashtable)[pri:0, instance:com.bestbuy.storesapitest.StoresAPIPostTest@5223e5ee]" name="verifyStoresApiStoresAddTest" duration-ms="25" started-at="2020-10-24T13:13:44 IST" data-provider="StoresPayloadData" finished-at="2020-10-24T13:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{state=Uttar Pradesh, address2=Sec 112 Noida, name=Apple Strore, zip=201246.0, serviceType=Sale, city=Noida, lat=100.0, type=Smartphone, lng=101.0, hours=9 to 5, services=Smartphone, address=Sec 63 Noida}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStoresApiStoresAddTest -->
+      </class> <!-- com.bestbuy.storesapitest.StoresAPIPostTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

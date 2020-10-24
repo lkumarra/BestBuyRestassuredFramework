@@ -32,4 +32,9 @@ public class BestBuyDataProvider {
 	public static Object[][] getProductApiData(){
 		return excelReader.getExcelData(Constants.PRODUCT_GET_DATA_SHEET);
 	}
+	
+	@DataProvider(name = "ProductCategoriesData")
+	public static Object[][] getProductCategoriesData(){
+		return excelReader.getExcelData(Constants.PRODUCT_GET_CATEGORIES_SHEET);
+	}
 }
